@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Coffee</title>
+</head>
+<body>
+    <header>
+        <h1>Week Eleven Lecture Two</h1>
+    </header>
+
+    <body>
+        <main>
+        <div class="controls">
+            <button type="button" class="control" data-filter="all">All</button>
+            <button type="button" class="control" data-filter=".latte">Latte</button>
+            <button type="button" class="control" data-filter=".dark">Dark</button>
+            <button type="button" class="control" data-filter=".decaf">Decaf</button>
+            <button type="button" class="control" data-filter="none">None</button>
+
+            <button type="button" class="control" data-sort="default:asc">Asc</button>
+            <button type="button" class="control" data-sort="default:desc">Desc</button>
+        </div>
+
+        <div class="container gallery">
+            <figure class = "mix dark" data-order = "5.29">
+                <img src="images/coffee1.jpg" alt="3 cups of coffee one with cream, one without, and a cookie">
+                <figcaption>Dark $5.29</figcaption>
+            </figure>
+
+            <figure class = "mix latte" data-order = "5.69">
+                <img src="images/coffee2.jpg" alt="flat white coffee with a small spoon on a saucer">
+                <figcaption>Latte $5.69</figcaption>
+            </figure>
+    
+            <figure class = "mix decaf" data-order = "5.29">
+                <img src="images/coffee3.jpg" alt="cappuccino with small hearts drawn on the top in milk foam">
+                <figcaption>Decaf Latte $5.29</figcaption>
+
+            </figure> 
+
+            <figure>
+                <img src="images/coffee4.jpg" alt="two cups of coffee one is a large latte with a heart in the milk foam the other is a small shot of espresso">
+                <figcaption>Dark $4.29</figcaption>
+
+            </figure>
+
+            <figure>
+                <img src="images/coffee5.jpg" alt="cup of hot coffee with lots of milk and three oatmeal cookies">
+                <figcaption>Dark Decaf $3.29</figcaption>
+
+            </figure> 
+
+            <figure>
+                <img src="images/coffee8.jpg" alt="two shots of espresso being extracted into small cups">
+                <figcaption>Latte $5.99</figcaption>
+
+            </figure> 
+
+            <figure>
+                <img src="images/coffee9.jpg" alt="cup of black coffee sitting on a bed of coffee beans">
+                <figcaption>Decaf $1.99</figcaption>
+
+            </figure>
+        </div>
+    </main>
+    </body>
+
+    <script src="js/mixitup.min.js"></script>
+
+    <script>
+        var containerEl = document.querySelector('.container');
+
+        var mixer = mixitup(containerEl);
+    </script>
+   
+
+    </main>
+    
+</body>
+</html>
+elements = document.querySelectorAll(".mix")

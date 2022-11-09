@@ -1,0 +1,26 @@
+.gallery{
+    border: 3px solid black;
+    width: 90%;
+    margin: 10px auto;
+    background-color: blanchedalmond;
+
+
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: space-around;
+    align-items: center;
+}
+header img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.gallery img{
+    width:100%;
+    border: 10px solid firebrick;
+}
+
+.lb-data.lb-caption{
+    font-size: 33px;
+}
