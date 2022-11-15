@@ -6,45 +6,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="dist/css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Teas</title>
+    <title>Isabel's Personal</title>
 </head>
 <body>
+    <a href="#main">Skip to Content</a>
     <header>
-        <h1>Week Eleven Lecture</h1>
-        <img src = "images/IMG_3321.jpeg" width="800" alt = "">
+        <nav>
+            <ul class="flex"> 
+                <li>
+                    <a href="index.html">Index</a>
+                </li>
+                <li class="current">
+                    <a href="isabel.html">Isabel's Personal Page</a>
+                </li>
+                <li >
+                    <a href="tamariah.html">Tamariah's Personal Page</a>
+                </li>
+                <li>
+                    <a href="videos.html">Our Vidoes</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Tamariah's Personal Page</h1>
+
     </header>
 
-    <main class = "gallery">
-        <a href = "images/black_tea.jpg" target = "_blank" 
-        data-lightbox = "tea" 
-        data-title = "Fancy Tea"
-        data-alt = "A different alt text">
-            <img src="images/black_tea.jpg" width = "200" alt="fancy tea mug with black_tea">
+    <main>
+        <div class="controls">
+            <button type="button" class="control" data-filter="all"><span>All</span></button>
+            <button type="button" class="control" data-filter=".family"><span>Family</span></button>
+            <button type="button" class="control" data-filter=".travel"><span>Travel</span></button>
+            <button type="button" class="control" data-filter=".food"><span>Food</span></button>
+            <button type="button" class="control" data-filter="none"><span>None</span></button>
+
+            <button type="button" class="control" data-sort="default:asc"><span>Asc</span></button>
+            <button type="button" class="control" data-sort="default:desc"><span>Desc</span></button>
+        </div>
+        <div class = "gallery">
+        <a href = "images/imommy.jpg" target = "_blank" 
+            class = "mix family"
+            data-lightbox = "family" 
+            data-title = "My mom and me!"
+            data-alt = "Isabel and her mom sitting in a resturant with a floral background. There is a sign above them that says: Mom, please send me money">
+            <img src="images/imommy.jpg" width = "200" alt="fancy tea mug with black_tea">
         </a>
-        <a href = "images/chai_tea.jpg" target = "_blank" 
-        data-lightbox = "chai" 
-        data-title = "Chai Tea"
-        data-alt = "An Indian Chai">
-            <img src="images/chai_tea.jpg"  width = "200" alt="an indian chai">
+        
+        <a href = "images/isisters.jpeg" target = "_blank" 
+            class = "mix family"
+            data-lightbox = "family" 
+            data-title = "My sisters!"
+            data-alt = "An Indian Chai">
+            <img src="images/isisters.jpeg"  width = "200" alt="an indian chai">
         </a>
 
-        <a href = "">
-            <img src="images/english_breakfast.jpg" width = "200" alt="a dark tea option">
+        <a href = "images/ipa.JPG" target = "_blank" 
+            class = "mix family"
+            data-lightbox = "family" 
+            data-title = "My dad!"
+            data-alt = "An Indian Chai">
+            <img src="images/ipa.JPG" width = "200" alt="a dark tea option">
         </a>
-        <a href = "">
-            <img src="images/green_tea.jpg" width = "200" alt="a loose leaf green tea">
+
+        <a href = "images/ichitown.jpg" target = "_blank" 
+            class = "mix travel"
+            data-lightbox = "travel" 
+            data-title = "Trip to Chicago!"
+            data-alt = "An Indian Chai">
+            <img src="images/ichitown.jpg" width = "200" alt="a loose leaf green tea">
         </a>
-        <a href = "">    
-            <img src="images/lemon_ginger_tea.jpg" width = "200" alt="light tea with lemon and ginger">
+   
+        <a href = "images/imexico.jpeg" target = "_blank" 
+            class = "mix travel"
+            data-lightbox = "travel" 
+            data-title = "Trip to Mexico"
+            data-alt = "An Indian Chai">
+            <img src="images/imexico.jpeg" width = "200" alt="light tea with lemon and ginger">
         </a>
-        <a href = "">
-        <img src="images/tea_collection.jpg" alt="collection of loose leaf tea">
+
+        <a href = "images/ifalls.jpeg" target = "_blank"
+            class = "mix travel"
+            data-lightbox = "travel" 
+            data-title = "Trip to Niagara Falls!"
+            data-alt = "An Indian Chai">
+            <img src="images/ifalls.jpeg" alt="collection of loose leaf tea">
         </a>
-        <a href = "">
-            <img src="images/long_island_ice_tea.jpg" alt="a icy Long Island tea (alcoholic)">
+
+        <a href = "images/icoffee.JPG" target = "_blank"
+            class = "mix food"
+            data-lightbox = "food" 
+            data-title = "Coffee"
+            data-alt = "An Indian Chai">
+            <img src="images/icoffee.JPG" alt="a icy Long Island tea (alcoholic)">
         </a>
+
+        <a href = "images/ipizza.jpeg" target  = "_blank"
+            class = "mix food"
+            data-lightbox = "food" 
+            data-title = "Pizza"
+            data-alt = "An Indian Chai">
+            <img src="images/ipizza.jpeg" alt="a icy Long Island tea (alcoholic)">
+        </a>
+
+        <a href = "images/iwaffle.jpeg" target = "_blank"
+            class = "mix food"
+            data-lightbox = "food" 
+            data-title = "Waffle!"
+            data-alt = "An Indian Chai">
+            <img src="images/iwaffle.jpeg" alt="a icy Long Island tea (alcoholic)">
+        </a>
+    </div>
     </main>
     <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script src="js/mixitup.min.js"></script>
+
+    <script>
+        var containerEl = document.querySelector('.gallery');
+
+        var mixer = mixitup(containerEl);
+    </script>
+    <footer>
+        <p>Isabel and Tamariah Final Project</p>
+    </footer>
+   
 
 </body>
 </html>

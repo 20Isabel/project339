@@ -1,12 +1,12 @@
 .gallery{
-    border: 3px solid black;
+    border: 10px solid black;
     width: 90%;
     margin: 10px auto;
-    background-color: blanchedalmond;
+    background-color: white;
 
 
     display: grid;
-    grid-template-columns: 25% 25% 25%;
+    grid-template-columns: 75%;
     justify-content: space-around;
     align-items: center;
 }
@@ -18,9 +18,53 @@ header img{
 
 .gallery img{
     width:100%;
-    border: 10px solid firebrick;
+    border: 5px solid black;
 }
 
 .lb-data.lb-caption{
     font-size: 33px;
+}
+button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+  
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+button:hover span {
+    padding-right: 25px;
+}
+  
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+@media screen and (min-width: 700px){
+    .gallery{
+        grid-template-columns: 25% 25% 25%;
+    }
 }
