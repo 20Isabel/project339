@@ -11,66 +11,85 @@
     <title>Coffee</title>
 </head>
 <body>
+    <a href="#main">Skip to Content</a>
     <header>
-        <h1>Week Eleven Lecture Two</h1>
+        <nav>
+            <ul class="flex"> 
+                <li>
+                    <a href="index.html">Index</a>
+                </li>
+                <li>
+                    <a href="isabel.html">Isabel's Personal Page</a>
+                </li>
+                <li class="current">
+                    <a href="tamariah.html">Tamariah's Personal Page</a>
+                </li>
+                <li>
+                    <a href="videos.html">Our Vidoes</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Tamariah's Personal Page</h1>
+
     </header>
 
-    <body>
-        <main>
+        <main id = "main">
         <div class="controls">
             <button type="button" class="control" data-filter="all">All</button>
-            <button type="button" class="control" data-filter=".latte">Latte</button>
-            <button type="button" class="control" data-filter=".dark">Dark</button>
-            <button type="button" class="control" data-filter=".decaf">Decaf</button>
+            <button type="button" class="control" data-filter=".latte">Friends</button>
+            <button type="button" class="control" data-filter=".dark">Family</button>
+            <button type="button" class="control" data-filter=".decaf">Tamariah</button>
             <button type="button" class="control" data-filter="none">None</button>
 
             <button type="button" class="control" data-sort="default:asc">Asc</button>
             <button type="button" class="control" data-sort="default:desc">Desc</button>
         </div>
 
-        <div class="container gallery">
-            <figure class = "mix dark" data-order = "5.29">
-                <img src="images/coffee1.jpg" alt="3 cups of coffee one with cream, one without, and a cookie">
+        <div class="container flex-gallery">
+        <!-- family catergory -->
+            <figure class = "mix dark">
+                <img src="images/t_fammom.jpeg" alt="3 cups of coffee one with cream, one without, and a cookie">
+                <figcaption>Dark $5.29</figcaption>
+            </figure>
+            <figure class = "mix dark">
+                <img src="images/t_famdad.JPG" alt="3 cups of coffee one with cream, one without, and a cookie">
+                <figcaption>Dark $5.29</figcaption>
+            </figure>
+            <figure class = "mix dark">
+                <img src="images/t_famsn.jpeg" alt="3 cups of coffee one with cream, one without, and a cookie">
                 <figcaption>Dark $5.29</figcaption>
             </figure>
 
+        <!-- friend catergory -->
             <figure class = "mix latte" data-order = "5.69">
-                <img src="images/coffee2.jpg" alt="flat white coffee with a small spoon on a saucer">
+                <img src="images/t_friendbest.jpeg" alt="flat white coffee with a small spoon on a saucer">
                 <figcaption>Latte $5.69</figcaption>
             </figure>
-    
-            <figure class = "mix decaf" data-order = "5.29">
-                <img src="images/coffee3.jpg" alt="cappuccino with small hearts drawn on the top in milk foam">
-                <figcaption>Decaf Latte $5.29</figcaption>
-
-            </figure> 
-
-            <figure>
-                <img src="images/coffee4.jpg" alt="two cups of coffee one is a large latte with a heart in the milk foam the other is a small shot of espresso">
-                <figcaption>Dark $4.29</figcaption>
-
+            <figure class = "mix latte" data-order = "5.69">
+                <img src="images/t_friendgame.jpeg" alt="flat white coffee with a small spoon on a saucer">
+                <figcaption>Latte $5.69</figcaption>
             </figure>
-
-            <figure>
-                <img src="images/coffee5.jpg" alt="cup of hot coffee with lots of milk and three oatmeal cookies">
-                <figcaption>Dark Decaf $3.29</figcaption>
-
+            <figure class = "mix latte" data-order = "5.69">
+                <img src="images/t_friendtov.jpeg" alt="flat white coffee with a small spoon on a saucer">
+                <figcaption>Latte $5.69</figcaption>
+            </figure>
+        <!-- Tamariah catergory -->
+            <figure class = "mix decaf" data-order = "5.29">
+                <img src="images/t_meatl.jpeg" alt="cappuccino with small hearts drawn on the top in milk foam">
+                <figcaption>Decaf Latte $5.29</figcaption>
+            </figure> 
+            <figure class = "mix decaf" data-order = "5.29">
+                <img src="images/t_megrad.jpeg" alt="cappuccino with small hearts drawn on the top in milk foam">
+                <figcaption>Decaf Latte $5.29</figcaption>
+            </figure> <figure class = "mix decaf" data-order = "5.29">
+                <img src="images/t_meselfie.jpeg" alt="cappuccino with small hearts drawn on the top in milk foam">
+                <figcaption>Decaf Latte $5.29</figcaption>
             </figure> 
 
-            <figure>
-                <img src="images/coffee8.jpg" alt="two shots of espresso being extracted into small cups">
-                <figcaption>Latte $5.99</figcaption>
-
-            </figure> 
-
-            <figure>
-                <img src="images/coffee9.jpg" alt="cup of black coffee sitting on a bed of coffee beans">
-                <figcaption>Decaf $1.99</figcaption>
 
             </figure>
         </div>
     </main>
-    </body>
 
     <script src="js/mixitup.min.js"></script>
 
@@ -81,7 +100,6 @@
     </script>
    
 
-    </main>
     
 </body>
 </html>
