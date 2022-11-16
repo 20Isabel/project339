@@ -1,70 +1,125 @@
-.gallery{
-    border: 10px solid black;
-    width: 90%;
-    margin: 10px auto;
-    background-color: white;
+
+/* Isabel's Code */
+.gallery{	
+    border: 10px solid black;	
+    width: 90%;	
+    margin: 10px auto;	
+    background-color: white;	
+    display: grid;	
+    grid-template-columns: 75%;	
+    justify-content: space-around;	
+    align-items: center;	
+}	
+header img{	
+    width: 50%;	
+    display: block;	
+    margin: auto;	
+}	
+.gallery img{	
+    width:100%;	
+    border: 5px solid black;	
+}	
+.lb-data.lb-caption{	
+    font-size: 33px;	
+}	
+button {	
+    display: inline-block;	
+    border-radius: 4px;	
+    background-color: black;	
+    border: none;	
+    color: #FFFFFF;	
+    text-align: center;	
+    font-size: 28px;	
+    padding: 10px;	
+    width: 200px;	
+    transition: all 0.5s;	
+    cursor: pointer;	
+    margin: 5px;	
+}	
+  	
+button span {	
+    cursor: pointer;	
+    display: inline-block;	
+    position: relative;	
+    transition: 0.5s;	
+}	
+  	
+button span:after {	
+    content: '\00bb';	
+    position: absolute;	
+    opacity: 0;	
+    top: 0;	
+    right: -20px;	
+    transition: 0.5s;	
+}	
+  	
+button:hover span {	
+    padding-right: 25px;	
+}	
+  	
+button:hover span:after {	
+    opacity: 1;	
+    right: 0;	
+}
 
 
-    display: grid;
-    grid-template-columns: 75%;
-    justify-content: space-around;
-    align-items: center;
-}
-header img{
-    width: 50%;
-    display: block;
-    margin: auto;
+
+
+
+/* Tamariah's Code */
+.current{
+    text-transform: uppercase;
 }
 
-.gallery img{
-    width:100%;
-    border: 5px solid black;
-}
-
-.lb-data.lb-caption{
-    font-size: 33px;
-}
-button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: black;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 28px;
+nav ul li{
+    border: 2px solid;
     padding: 10px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
+    height: 20px;
 }
-  
-button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
+
+.flex-gallery{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-  
-button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
+
+
+figure img{
+    width: 95%;
 }
-  
-button:hover span {
-    padding-right: 25px;
-}
-  
-button:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-@media screen and (min-width: 700px){
-    .gallery{
-        grid-template-columns: 25% 25% 25%;
+
+
+
+
+@media all and (min-width: 700px){
+
+    /* Isabel's Code */
+    .gallery{	
+        grid-template-columns: 25% 25% 25%;	
     }
+
+
+
+
+    /* Tamariah's Code */
+  
+.flex-gallery{
+    flex-direction:column;
+    flex-wrap: wrap;
+
+    /* justify-content: center; */
+    /* gap: 10px; */
+}  
+
+figure {
+    width: 220px;
+}
+
+
+figure:nth-child(5n) {
+    width: 50%;
+}
+
+
 }
