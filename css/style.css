@@ -10,6 +10,15 @@
     justify-content: space-around;	
     align-items: center;	
 }	
+
+.skip{
+    position: absolute;
+    top: -100px;
+}
+
+.skip:focus{
+    top: 0px
+}
 header img{	
     width: 50%;	
     display: block;	
@@ -34,7 +43,8 @@ button {
     width: 200px;	
     transition: all 0.5s;	
     cursor: pointer;	
-    margin: 5px;	
+    margin: 5px;
+    justify-content: center;	
 }	
   	
 button span {	
@@ -67,6 +77,7 @@ button:hover span:after {
 
 
 /* Tamariah's Code */
+
 .current{
     text-transform: uppercase;
 }
@@ -77,49 +88,104 @@ nav ul li{
     height: 20px;
 }
 
-.flex-gallery{
-    padding: 40px;
+
+.container .flex-gallery{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 40px;
     gap: 10px;
 }
 
 
+
 figure img{
     width: 95%;
+    border: 5px solid black;
+    margin: 5px;
 }
 
-
+figure{
+    position: relative;
+    cursor: pointer;
+}
 
 
 @media all and (min-width: 700px){
 
     /* Isabel's Code */
     .gallery{	
+        grid-template-columns: 45% 45%;	
+    }
+
+    /* Tamariah's Code */
+    .flex-gallery{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        background-color: black;
+    }
+
+    .flex-gallery .column{
+        flex-direction: column;
+        gap: 10px;
+        flex-basis: 20px;
+        flex-wrap: wrap;
+    }
+
+    figure{
+        width: 200px;
+        position: relative;
+        cursor: pointer;
+    }
+
+
+    figure img{ 
+        width: 95%;
+        border: 2px solid white;
+    }
+}
+
+@media all and (min-width: 1000px){
+
+    /* Isabel's Code */
+    .gallery{	
         grid-template-columns: 25% 25% 25%;	
+    }
+
+    /* Tamariah's Code */
+  
+    .flex-gallery{
+    flex-direction:row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #FFFFFF;
+    }  
+
+    .flex-gallery .column{
+        flex-direction: column;
+        gap: 10px;
+        flex-basis: 20px;
+    }
+
+    figure{
+        width: 200px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    figure img{ 
+        width: 95%;
+        border: 2px solid rgb(0, 0, 0);
     }
 
 
 
+    
 
-    /* Tamariah's Code */
-  
-.flex-gallery{
-    flex-direction:column;
-    flex-wrap: wrap;
+    
 
-    /* justify-content: center; */
-    /* gap: 10px; */
-}  
-
-figure {
-    width: 220px;
-}
-
-
-figure:nth-child(5n) {
-    width: 50%;
-}
 
 
 }

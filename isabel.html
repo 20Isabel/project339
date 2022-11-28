@@ -9,7 +9,7 @@
     <title>Isabel's Personal Page</title>
 </head>
 <body>
-    <a href="#main">Skip to Content</a>
+    <a class = "skip" href="#skip">Skip to Main Content</a>
     <header>
         <nav>
             <ul class="flex"> 
@@ -31,16 +31,13 @@
 
     </header>
 
-    <main>
+    <main id = "skip">
         <div class="controls">
             <button type="button" class="control" data-filter="all"><span>All</span></button>
             <button type="button" class="control" data-filter=".family"><span>Family</span></button>
             <button type="button" class="control" data-filter=".travel"><span>Travel</span></button>
             <button type="button" class="control" data-filter=".food"><span>Food</span></button>
-            <button type="button" class="control" data-filter="none"><span>None</span></button>
-
-            <button type="button" class="control" data-sort="default:asc"><span>Asc</span></button>
-            <button type="button" class="control" data-sort="default:desc"><span>Desc</span></button>
+     
         </div>
         <div class = "gallery">
         <a href = "images/imommy.jpg" target = "_blank" 

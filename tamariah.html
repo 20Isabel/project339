@@ -11,7 +11,7 @@
     <title>Coffee</title>
 </head>
 <body>
-    <a href="#main">Skip to Content</a>
+    <a class = "skip" href="#skip">Skip to Content</a>
     <header>
         <nav>
             <ul class="flex"> 
@@ -33,58 +33,53 @@
 
     </header>
 
-        <main id = "main">
+        <main id = "skip">
         <div class="controls">
             <button type="button" class="control" data-filter="all">All</button>
-            <button type="button" class="control" data-filter=".latte">Friends</button>
-            <button type="button" class="control" data-filter=".dark">Family</button>
-            <button type="button" class="control" data-filter=".decaf">Tamariah</button>
-            <button type="button" class="control" data-filter="none">None</button>
-
-            <button type="button" class="control" data-sort="default:asc">Asc</button>
-            <button type="button" class="control" data-sort="default:desc">Desc</button>
+            <button type="button" class="control" data-filter=".friend">Friends</button>
+            <button type="button" class="control" data-filter=".family">Family</button>
+            <button type="button" class="control" data-filter=".leadership">Leadership</button>
+        
         </div>
 
         <div class="container flex-gallery">
-        <!-- family catergory -->
-            <figure class = "mix dark">
-                <img src="images/t_fammom.jpeg" alt="3 cups of coffee one with cream, one without, and a cookie">
-                <figcaption>Dark $5.29</figcaption>
-            </figure>
-            <figure class = "mix dark">
-                <img src="images/t_famdad.JPG" alt="3 cups of coffee one with cream, one without, and a cookie">
-                <figcaption>Dark $5.29</figcaption>
-            </figure>
-            <figure class = "mix dark">
-                <img src="images/t_famsn.jpeg" alt="3 cups of coffee one with cream, one without, and a cookie">
-                <figcaption>Dark $5.29</figcaption>
-            </figure>
-
-        <!-- friend catergory -->
-            <figure class = "mix latte" data-order = "5.69">
-                <img src="images/t_friendbest.jpeg" alt="flat white coffee with a small spoon on a saucer">
-                <figcaption>Latte $5.69</figcaption>
-            </figure>
-            <figure class = "mix latte" data-order = "5.69">
-                <img src="images/t_friendgame.jpeg" alt="flat white coffee with a small spoon on a saucer">
-                <figcaption>Latte $5.69</figcaption>
-            </figure>
-            <figure class = "mix latte" data-order = "5.69">
-                <img src="images/t_friendtov.jpeg" alt="flat white coffee with a small spoon on a saucer">
-                <figcaption>Latte $5.69</figcaption>
-            </figure>
-        <!-- Tamariah catergory -->
-            <figure class = "mix decaf" data-order = "5.29">
-                <img src="images/t_meatl.jpeg" alt="cappuccino with small hearts drawn on the top in milk foam">
-                <figcaption>Decaf Latte $5.29</figcaption>
-            </figure> 
-            <figure class = "mix decaf" data-order = "5.29">
-                <img src="images/t_megrad.jpeg" alt="cappuccino with small hearts drawn on the top in milk foam">
-                <figcaption>Decaf Latte $5.29</figcaption>
-            </figure> <figure class = "mix decaf" data-order = "5.29">
-                <img src="images/t_meselfie.jpeg" alt="cappuccino with small hearts drawn on the top in milk foam">
-                <figcaption>Decaf Latte $5.29</figcaption>
-            </figure> 
+            <div class="column">
+            <!-- family catergory -->
+ 
+                
+                <figure class = "mix family">
+                    <img src="images/t_famdad.JPG" alt="3 cups of coffee one with cream, one without, and a cookie">
+                </figure>
+                <figure class = "mix family">
+                    <img src="images/IMG_4499.jpeg" alt="3 cups of coffee one with cream, one without, and a cookie">
+                </figure>
+                <figure class = "mix family">
+                    <img src="images/t_famsn.jpeg" alt="3 cups of coffee one with cream, one without, and a cookie">
+                </figure>
+            </div>
+            <div class="column">
+            <!-- friend catergory -->
+                <figure class = "mix friend" data-order = "5.69">
+                    <img src="images/t_friendbest.jpeg" alt="flat white coffee with a small spoon on a saucer">
+                </figure>
+                <figure class = "mix friend" data-order = "5.69">
+                    <img src="images/t_friendtov.jpeg" alt="flat white coffee with a small spoon on a saucer">
+                </figure>
+                <figure class = "mix friend" data-order = "5.69">
+                    <img src="images/t_friendgame.jpeg" alt="flat white coffee with a small spoon on a saucer">
+                </figure>
+            </div>
+            
+            <div class="column">
+            <!-- Tamariah catergory -->
+                <figure class = "mix leadership" data-order = "5.29">
+                    <img src="images/IMG_3247.jpg" alt="cappuccino with small hearts drawn on the top in milk foam">
+                </figure> 
+                <figure class = "mix leadership" data-order = "5.29">
+                    <img src="images/IMG_0700.jpeg" alt="cappuccino with small hearts drawn on the top in milk foam">
+                </figure> <figure class = "mix leadership" data-order = "5.29">
+                    <img src="images/IMG_3777.jpeg" alt="cappuccino with small hearts drawn on the top in milk foam">
+                </figure> 
 
 
             </figure>
