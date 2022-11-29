@@ -1,5 +1,10 @@
 
 /* Isabel's Code */
+h1{
+    font-weight: bold;
+    font-size: 32px;
+}
+
 .gallery{	
     border: 10px solid black;	
     width: 90%;	
@@ -10,12 +15,26 @@
     justify-content: space-around;	
     align-items: center;	
 }	
-
+.flex{
+    display: flex;
+    flex-flow: column;
+}
 .skip{
     position: absolute;
     top: -100px;
 }
+nav li{
+    background: lightgrey;
+    text-align:center;
 
+}
+nav li a{
+    text-decoration:none;
+    color:black;
+    text-align:center;
+    font-size:150%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .skip:focus{
     top: 0px
 }
@@ -78,14 +97,20 @@ button:hover span:after {
 /* Tamariah's Code */
 
 .current{
-    text-transform: uppercase;
+   text-transform: uppercase;
+   border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
 }
 
 nav ul li{
-    border: 2px solid;
+    border: 2px;
     padding: 10px;
     height: 20px;
 }
+/* ^^^^^^^^^^^ this styles tabs ^^^^^^^^^^^^^ */
 
 
 .container .flex-gallery{
@@ -109,11 +134,14 @@ figure{
 }
 
 /* Styling our Image */
+
 .Tamariah_photo img
 {
-    width: 250px;
+    transform: rotate(-90deg);
     display: block;
-    margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
 }
 .style1{
     filter: blur(4px);
@@ -132,10 +160,39 @@ figure{
 .style3{
     filter: brightness(250%)
 }
+/* Home page galley style */
+div h2{
+    margin: auto;
+  width: 50%;
+  padding: 10px;
+  font-size: 48px;
+  text-align: center;
 
+}
+div p{
+    margin: auto;
+  width: 50%;
+  padding: 10px;
+  line-height: 25px;
+
+}
+div img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+p.indent{
+    text-indent: 30px;
+}
+/* Media Queries */
 
 @media all and (min-width: 700px){
-
+.flex{
+    flex-flow:row wrap;
+    justify-content: space-around;
+}
     /* Isabel's Code */
     .gallery{	
         grid-template-columns: 45% 45%;	
@@ -173,6 +230,7 @@ figure{
 @media all and (min-width: 1000px){
 
     /* Isabel's Code */
+
     .gallery{	
         grid-template-columns: 25% 25% 25%;	
     }
@@ -203,13 +261,4 @@ figure{
         width: 95%;
         border: 2px solid rgb(0, 0, 0);
     }
-
-
-
-    
-
-    
-
-
-
 }
