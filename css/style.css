@@ -100,12 +100,11 @@ button:hover span:after {
 
 .current{
    text-transform: uppercase;
-   border: none;
     outline: none;
     padding: 10px 16px;
     background-color: #f1f1f1;
     cursor: pointer;
-    border: 2px dashed black;
+    border: 5px dashed blue;
 
 }
 
